@@ -1,0 +1,12 @@
+C:\git\Thanatos\ThanatosBackend.Infrastructure\bin\Debug\net6.0\ThanatosBackend.Infrastructure.deps.json
+C:\git\Thanatos\ThanatosBackend.Infrastructure\bin\Debug\net6.0\ThanatosBackend.Infrastructure.dll
+C:\git\Thanatos\ThanatosBackend.Infrastructure\bin\Debug\net6.0\ThanatosBackend.Infrastructure.pdb
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.csproj.AssemblyReference.cache
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.AssemblyInfoInputs.cache
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.AssemblyInfo.cs
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.csproj.CoreCompileInputs.cache
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.dll
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\refint\ThanatosBackend.Infrastructure.dll
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ThanatosBackend.Infrastructure.pdb
+C:\git\Thanatos\ThanatosBackend.Infrastructure\obj\Debug\net6.0\ref\ThanatosBackend.Infrastructure.dll
