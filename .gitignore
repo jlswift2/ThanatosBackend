@@ -1,0 +1,12 @@
+# Visual Studio configs
+.vs/
+
+#Visual Studio profiler
+*.vsp
+*.vspx
+*.sap
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
