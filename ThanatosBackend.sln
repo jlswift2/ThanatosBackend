@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend", "ThanatosBackend.csproj", "{215A40D9-4AEA-4513-B096-38B7267C884F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend", "src\ThanatosBackend\ThanatosBackend.csproj", "{215A40D9-4AEA-4513-B096-38B7267C884F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Infrastructure", "..\ThanatosBackend.Infrastructure\ThanatosBackend.Infrastructure.csproj", "{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Infrastructure", "src\ThanatosBackend.Infrastructure\ThanatosBackend.Infrastructure.csproj", "{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Application", "..\ThanatosBackend.Application\ThanatosBackend.Application.csproj", "{128051E9-C747-401A-96EE-6303E155BA1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Application", "src\ThanatosBackend.Application\ThanatosBackend.Application.csproj", "{128051E9-C747-401A-96EE-6303E155BA1E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{ADFBA4B8-F415-4BB9-B284-69D988E174AE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ADFBA4B8-F415-4BB9-B284-69D988E174AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThanatosBackend.Infrastructure.UnitTests", "..\ThanatosBackend.Infrastructure.UnitTests\ThanatosBackend.Infrastructure.UnitTests.csproj", "{FC4B073E-51F0-4666-8095-8F00463CA744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Infrastructure.UnitTests", "test\ThanatosBackend.Infrastructure.UnitTests\ThanatosBackend.Infrastructure.UnitTests.csproj", "{FC4B073E-51F0-4666-8095-8F00463CA744}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

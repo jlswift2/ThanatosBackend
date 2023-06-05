@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure.UnitTests\\ThanatosBackend.Infrastructure.UnitTests.csproj",
+      "projectUniqueName": "C:\\git\\ThanatosBackend\\test\\ThanatosBackend.Infrastructure.UnitTests\\ThanatosBackend.Infrastructure.UnitTests.csproj",
       "projectName": "ThanatosBackend.Infrastructure.UnitTests",
-      "projectPath": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure.UnitTests\\ThanatosBackend.Infrastructure.UnitTests.csproj",
+      "projectPath": "C:\\git\\ThanatosBackend\\test\\ThanatosBackend.Infrastructure.UnitTests\\ThanatosBackend.Infrastructure.UnitTests.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure.UnitTests\\obj\\",
+      "outputPath": "C:\\git\\ThanatosBackend\\test\\ThanatosBackend.Infrastructure.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",

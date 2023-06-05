@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ExKh5y8Dcw6r6v4GsT2nLcbx+qK9FwwRA9Gqyp82oePf1Y/DvteU45eMBH6gGY/cyz5s4d0AI0w2NPO1vq/r+Q==",
+  "dgSpecHash": "81n0SbXcTDlfS5yHrCytWO9QMO1bkFDbuk0wOIuDry/5HxMjBVgYzLel/SP8sShf543Q8Z7z+DGx4pTR97lGow==",
   "success": true,
-  "projectFilePath": "C:\\git\\Thanatos\\ThanatosBackend.Application\\ThanatosBackend.Application.csproj",
+  "projectFilePath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Application\\ThanatosBackend.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Justin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Justin\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",

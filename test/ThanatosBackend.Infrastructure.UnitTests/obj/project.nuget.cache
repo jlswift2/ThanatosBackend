@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jbie7nOOGJmbdvBgJIO2EECS2vIAke1p0KQ/HcnzsdzoILnkz4YNe+6kS9FcQ1kKD1u1goF+BEEkIE6Yvgiudg==",
+  "dgSpecHash": "pFe0vwO6ASaSju/E9xvM2lNrftbfzYlhG3FdGulVFcmjG1rukcJSIapdHYE0jTjMs4QF2drbeezdFEZbLNdGDQ==",
   "success": true,
-  "projectFilePath": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure.UnitTests\\ThanatosBackend.Infrastructure.UnitTests.csproj",
+  "projectFilePath": "C:\\git\\ThanatosBackend\\test\\ThanatosBackend.Infrastructure.UnitTests\\ThanatosBackend.Infrastructure.UnitTests.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

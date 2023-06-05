@@ -483,11 +483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\git\\Thanatos\\ThanatosBackend\\ThanatosBackend.csproj",
+      "projectUniqueName": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend\\ThanatosBackend.csproj",
       "projectName": "ThanatosBackend",
-      "projectPath": "C:\\git\\Thanatos\\ThanatosBackend\\ThanatosBackend.csproj",
+      "projectPath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend\\ThanatosBackend.csproj",
       "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-      "outputPath": "C:\\git\\Thanatos\\ThanatosBackend\\obj\\",
+      "outputPath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -505,11 +505,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\git\\Thanatos\\ThanatosBackend.Application\\ThanatosBackend.Application.csproj": {
-              "projectPath": "C:\\git\\Thanatos\\ThanatosBackend.Application\\ThanatosBackend.Application.csproj"
+            "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Application\\ThanatosBackend.Application.csproj": {
+              "projectPath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Application\\ThanatosBackend.Application.csproj"
             },
-            "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj": {
-              "projectPath": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj"
+            "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj": {
+              "projectPath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj"
             }
           }
         }

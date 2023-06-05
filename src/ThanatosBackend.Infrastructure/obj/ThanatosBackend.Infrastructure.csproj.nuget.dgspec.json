@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj": {}
+    "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj": {
+    "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj",
+        "projectUniqueName": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj",
         "projectName": "ThanatosBackend.Infrastructure",
-        "projectPath": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj",
+        "projectPath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\ThanatosBackend.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Justin\\.nuget\\packages\\",
-        "outputPath": "C:\\git\\Thanatos\\ThanatosBackend.Infrastructure\\obj\\",
+        "outputPath": "C:\\git\\ThanatosBackend\\src\\ThanatosBackend.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Justin\\AppData\\Roaming\\NuGet\\NuGet.Config",
