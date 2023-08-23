@@ -10,6 +10,11 @@ namespace Thanatos.API
 
             // Add services to the container.
             builder.Services.AddControllers();
+            builder.Services.AddDbContext<ThanatosDbContext>(OptionsBuilderConfigurationExtensions =>
+                OptionsBuilderConfigurationExtensions.UseSqlServer(
+                    builder.Configuration.GetConnectionString("DbConnection")
+                )
+            );
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -19,6 +24,14 @@ namespace Thanatos.API
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
+                // Apply pending migrations
+                using (var scope = app.Services.CreateScope())
+                {
+                    var serviceProvider = scope.ServiceProvider;
+                    var dbContext = serviceProvider.GetRequiredService<ThanatosDbContext>();
+                    dbContext.Database.Migrate();
+                }
+
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
