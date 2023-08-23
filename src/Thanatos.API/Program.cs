@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Thanatos.API.Infrastructure;
 
 namespace Thanatos.API
 {
@@ -15,6 +16,10 @@ namespace Thanatos.API
                     builder.Configuration.GetConnectionString("DbConnection")
                 )
             );
+            builder.Services.AddMediatR(cfg =>
+            {
+                cfg.RegisterServicesFromAssembly(typeof(ThanatosDbContext).Assembly);
+            });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
