@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thanatos.API.Infrastructure", "src\Thanatos.API.Infrastructure\Thanatos.API.Infrastructure.csproj", "{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Infrastructure", "src\ThanatosBackend.Infrastructure\ThanatosBackend.Infrastructure.csproj", "{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Application", "src\ThanatosBackend.Application\ThanatosBackend.Application.csproj", "{128051E9-C747-401A-96EE-6303E155BA1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thanatos.API.Application", "src\Thanatos.API.Application\Thanatos.API.Application.csproj", "{128051E9-C747-401A-96EE-6303E155BA1E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{ADFBA4B8-F415-4BB9-B284-69D988E174AE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThanatosBackend.Infrastructure.UnitTests", "test\ThanatosBackend.Infrastructure.UnitTests\ThanatosBackend.Infrastructure.UnitTests.csproj", "{FC4B073E-51F0-4666-8095-8F00463CA744}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thanatos.API.Infrastructure.UnitTests", "test\Thanatos.API.Infrastructure.UnitTests\Thanatos.API.Infrastructure.UnitTests.csproj", "{FC4B073E-51F0-4666-8095-8F00463CA744}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thanatos.API", "src\Thanatos.API\Thanatos.API.csproj", "{5C4F6C46-B6E9-42A0-903F-D09E4A2C4289}"
 EndProject
 Global
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{215A40D9-4AEA-4513-B096-38B7267C884F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{215A40D9-4AEA-4513-B096-38B7267C884F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{215A40D9-4AEA-4513-B096-38B7267C884F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{215A40D9-4AEA-4513-B096-38B7267C884F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBE61B78-C6DF-4B65-A902-1EBC8ABAD703}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +31,10 @@ Global
 		{FC4B073E-51F0-4666-8095-8F00463CA744}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC4B073E-51F0-4666-8095-8F00463CA744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC4B073E-51F0-4666-8095-8F00463CA744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C4F6C46-B6E9-42A0-903F-D09E4A2C4289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C4F6C46-B6E9-42A0-903F-D09E4A2C4289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C4F6C46-B6E9-42A0-903F-D09E4A2C4289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C4F6C46-B6E9-42A0-903F-D09E4A2C4289}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
