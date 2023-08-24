@@ -1,3 +1,5 @@
+using FluentValidation;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Thanatos.API.Infrastructure;
 
@@ -16,6 +18,8 @@ namespace Thanatos.API
                     builder.Configuration.GetConnectionString("DbConnection")
                 )
             );
+            builder.Services.AddValidatorsFromAssembly(typeof(ValidationBehavior<,>).Assembly);
+            builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
             builder.Services.AddMediatR(cfg =>
             {
                 cfg.RegisterServicesFromAssembly(typeof(ThanatosDbContext).Assembly);
