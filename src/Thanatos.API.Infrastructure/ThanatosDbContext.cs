@@ -12,5 +12,9 @@ namespace Thanatos.API.Infrastructure
         public ThanatosDbContext(DbContextOptions<ThanatosDbContext> options) : base(options)
         {
         }
+
+        public DbSet<Data.Page> Pages { get; set; }
+        public DbSet<Data.Section> Sections { get; set; }
+        public DbSet<Data.Tag> Tags { get; set; }
     }
 }
