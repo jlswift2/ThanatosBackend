@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Thanatos.API.Infrastructure.CQRS.Pages;
 
@@ -8,11 +9,20 @@ namespace Thanatos.API.Controllers
     [ApiController]
     public class PagesController : ControllerBase
     {
+        private readonly IMediator _mediator;
+
+        public PagesController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetPagesRequestResponse>))]
         public IActionResult GetPages([FromQuery] GetPagesQuery query)
         {
-            throw new NotImplementedException();
+            var request = new GetPagesRequest(query);
+            var response = _mediator.Send(request).Result;
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
@@ -20,7 +30,9 @@ namespace Thanatos.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult GetPage([FromRoute] GetPageRoute route)
         {
-            throw new NotImplementedException();
+            var request = new GetPageRequest(route);
+            var response = _mediator.Send(request).Result;
+            return Ok(response);
         }
 
         [HttpPost]
@@ -28,7 +40,9 @@ namespace Thanatos.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult CreatePage([FromBody] CreatePageBody body)
         {
-            throw new NotImplementedException();
+            var request = new CreatePageRequest(body);
+            var response = _mediator.Send(request).Result;
+            return CreatedAtAction(nameof(GetPage), new { id = response.Id }, response);
         }
 
         [HttpPut("{id}")]
@@ -37,14 +51,18 @@ namespace Thanatos.API.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public IActionResult UpdatePage([FromRoute] UpdatePageRoute route, [FromBody] UpdatePageBody body)
         {
-            throw new NotImplementedException();
+            var request = new UpdatePageRequest(route, body);
+            var response = _mediator.Send(request).Result;
+            return Ok(response);
         }
 
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public IActionResult DeletePage([FromRoute] DeletePageRoute route)
         {
-            throw new NotImplementedException();
+            var request = new DeletePageRequest(route);
+            _mediator.Send(request);
+            return NoContent();
         }
     }
 }
