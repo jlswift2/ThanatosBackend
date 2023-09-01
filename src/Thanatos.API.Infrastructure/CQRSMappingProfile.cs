@@ -12,6 +12,8 @@ namespace Thanatos.API.Infrastructure
     {
         public CQRSMappingProfile()
         {
+            CreateMap<CreateTagBody, Tag>();
+            CreateMap<Tag, CreateTagRequestResponse>();
         }
     }
 }
