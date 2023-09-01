@@ -1,6 +1,7 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 using Thanatos.API.Infrastructure;
 
 namespace Thanatos.API
@@ -12,12 +13,16 @@ namespace Thanatos.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddControllers();
+            builder.Services.AddControllers(options =>
+            {
+                options.Filters.Add<ExceptionFilter>();
+            });
             builder.Services.AddDbContext<ThanatosDbContext>(OptionsBuilderConfigurationExtensions =>
                 OptionsBuilderConfigurationExtensions.UseSqlServer(
                     builder.Configuration.GetConnectionString("DbConnection")
                 )
             );
+            builder.Services.AddAutoMapper(typeof(CQRSMappingProfile).Assembly);
             builder.Services.AddValidatorsFromAssembly(typeof(ValidationBehavior<,>).Assembly);
             builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
             builder.Services.AddMediatR(cfg =>
@@ -48,7 +53,6 @@ namespace Thanatos.API
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
