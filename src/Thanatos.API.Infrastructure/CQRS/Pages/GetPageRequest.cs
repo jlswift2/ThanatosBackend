@@ -9,11 +9,16 @@ namespace Thanatos.API.Infrastructure.CQRS.Pages
 {
     public class GetPageRequest : IRequest<GetPageRequestResponse>
     {
-        public GetPageRequest() { throw new NotImplementedException(); }
+        public GetPageRequest(GetPageRoute route)
+        {
+            Route = route;
+        }
+
+        public GetPageRoute Route { get; }
     }
 
     public record GetPageRoute
     {
-        public GetPageRoute() { throw new NotImplementedException(); }
+        public Guid Id { get; set; }
     }
 }

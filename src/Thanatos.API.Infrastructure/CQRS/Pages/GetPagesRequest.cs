@@ -4,16 +4,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Thanatos.API.Infrastructure.Data;
 
 namespace Thanatos.API.Infrastructure.CQRS.Pages
 {
     public class GetPagesRequest : IRequest<List<GetPagesRequestResponse>>
     {
-        public GetPagesRequest() { throw new NotImplementedException(); }
+        public GetPagesRequest(GetPagesQuery query)
+        {
+            Query = query;
+        }
+
+        public GetPagesQuery Query { get; }
     }
 
     public record GetPagesQuery
     {
-        public GetPagesQuery() { throw new NotImplementedException(); }
+        public string? Title { get; set; }
+        public Category? Category { get; set; }
     }
 }

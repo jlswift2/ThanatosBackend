@@ -4,21 +4,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Thanatos.API.Infrastructure.Data;
 
 namespace Thanatos.API.Infrastructure.CQRS.Pages
 {
     public class UpdatePageRequest : IRequest<UpdatePageRequestResponse>
     {
-        public UpdatePageRequest() { throw new NotImplementedException(); }
+        public UpdatePageRequest(UpdatePageRoute route, UpdatePageBody body)
+        {
+            Route = route;
+            Body = body;
+        }
+
+        public UpdatePageRoute Route { get; }
+        public UpdatePageBody Body { get; }
     }
 
     public record UpdatePageRoute
     {
-        public UpdatePageRoute() { throw new NotImplementedException(); }
+        public Guid Id { get; set; }
     }
 
     public record UpdatePageBody
     {
-        public UpdatePageBody() { throw new NotImplementedException(); }
+        public string Title { get; set; }
+        public Category Category { get; set; }
     }
 }

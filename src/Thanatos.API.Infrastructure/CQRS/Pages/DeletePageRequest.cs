@@ -9,11 +9,16 @@ namespace Thanatos.API.Infrastructure.CQRS.Pages
 {
     public class DeletePageRequest : IRequest
     {
-        public DeletePageRequest() { throw new NotImplementedException(); }
+        public DeletePageRequest(DeletePageRoute route)
+        {
+            Route = route;
+        }
+
+        public DeletePageRoute Route { get; set; }
     }
 
     public record DeletePageRoute
     {
-        public DeletePageRoute() { throw new NotImplementedException(); }
+        public Guid Id { get; set; }
     }
 }
