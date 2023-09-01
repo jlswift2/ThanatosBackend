@@ -19,6 +19,9 @@ namespace Thanatos.API.Infrastructure
 
             CreateMap<CreateTagBody, Tag>();
             CreateMap<Tag, CreateTagRequestResponse>();
+
+            CreateMap<UpdateTagBody, Tag>();
+            CreateMap<Tag, UpdateTagRequestResponse>();
             #endregion Tags
         }
     }

@@ -44,5 +44,15 @@ namespace Thanatos.API.Controllers
             var result = await _mediator.Send(new CreateTagRequest(body));
             return CreatedAtAction(nameof(GetTag), new { id = result.Id }, result);
         }
+
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(UpdateTagRequestResponse))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> UpdateTag([FromRoute] UpdateTagRoute route, [FromBody] UpdateTagBody body)
+        {
+            var result = await _mediator.Send(new UpdateTagRequest(route, body));
+            return Ok(result);
+        }
     }
 }
