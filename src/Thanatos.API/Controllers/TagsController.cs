@@ -26,6 +26,16 @@ namespace Thanatos.API.Controllers
             return Ok(result);
         }
 
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetTagRequestResponse))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetTag([FromRoute] GetTagRoute route)
+        {
+            var result = await _mediator.Send(new GetTagRequest(route));
+            return Ok(result);
+        }
+
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(CreateTagRequestResponse))]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
