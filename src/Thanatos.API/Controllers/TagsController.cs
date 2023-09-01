@@ -54,5 +54,13 @@ namespace Thanatos.API.Controllers
             var result = await _mediator.Send(new UpdateTagRequest(route, body));
             return Ok(result);
         }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public async Task<IActionResult> DeleteTag([FromRoute] DeleteTagRoute route)
+        {
+            await _mediator.Send(new DeleteTagRequest(route));
+            return NoContent();
+        }
     }
 }
